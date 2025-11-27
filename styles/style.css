@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 60px;
+    background: #fff;
+    height: 10vh;
+}
+
+header img {
+    height: 45px;
+}
+
+nav a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Hero */
+.hero {
+    height: 90vh;
+    background-image: url('/assets/invent.png');
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    /* background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0.9) 20%,
+        rgba(255, 255, 255, 0.6) 50%,
+        rgba(255, 255, 255, 0.0) 100%
+    ); */
+}
+
+.hero-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60%;  /* controla o tamanho do fade */
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0.9) 20%,
+        rgba(255, 255, 255, 0.6) 50%,
+        rgba(255, 255, 255, 0.0) 100%
+    );
+}
+
+
+.inventario-text{
+    background: linear-gradient(90deg, #00d2a0, #007bff);
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.inventario-wrapper {
+    gap: 20px; /* espaço entre texto e logo */
+}
+
+.inventario-title {
+    font-size: 58px;
+    margin: 0;
+    font-weight: 700;
+    color: #00c8b4; /* verde inicial */
+}
+
+.inventario-title span {
+    background: linear-gradient(90deg, #00c8b4, #007bff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.inventario-subtitle {
+    margin: -5px 0 0 2px;
+    font-size: 18px;
+    color: #333;
+    font-family: 'Open Sans'
+}
+
+.inventario-logo {
+    height: 130px; /* ajuste como quiser */
+}
